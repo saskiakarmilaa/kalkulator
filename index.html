@@ -10,16 +10,20 @@
     <div class="container">
         <div class="calculator">
             <form>
+                <!-- Display untuk menampilkan inputan dan hasil perhitungan -->
                 <div class="display">
                     <input placeholder="0" name="display">
                 </div>
+                <!-- Tombol-tombol operator dan fungsi -->
                 <div>
                     <input type="button" value="AC" onclick="display.value = ''" class="operator">
+                    <!-- DE berfungsi untuk menghapus satu karakter terakhir -->
                     <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)"
                     class="operator">
                     <input type="button" value="." onclick="display.value += '.'" class="operator">
                     <input type="button" value="/" onclick="display.value += '/'" class="operator">
                 </div>
+                <!-- Tombol-tombol angka dan operator -->
                 <div>
                     <input type="button" value="7" onclick="display.value += '7'">
                     <input type="button" value="8" onclick="display.value += '8'">
@@ -38,9 +42,11 @@
                     <input type="button" value="3" onclick="display.value += '3'">
                     <input type="button" value="+" onclick="display.value += '+'">
                 </div>
+                <!-- Tombol untuk angka 0 dan 00 -->
                 <div>
                     <input type="button" value="00" onclick="display.value += '00'">
                     <input type="button" value="0" onclick="display.value += '0'">
+                    <!-- Tombol equal untuk menampilkan hasil perhitungan menggunakan eval -->
                     <input type="button" value="=" onclick="display.value = eval(display.value)"
                     class="equal">
                 </div>

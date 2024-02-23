@@ -1,3 +1,4 @@
+/* Mengatur margin dan padding default ke 0, serta menggunakan font family Poppins */
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
     box-sizing: border-box;
 }
 
-
+/* Mengatur container untuk mengisi seluruh tinggi layar dengan warna latar belakang */
 .container{
     width: 100%;
     height: 100vh;
@@ -14,11 +15,15 @@
     align-items: center;
     justify-content: center;
 }
+
+/* Mengatur tampilan kalkulator dengan background dan padding */
 .calculator{
     background: #3a4452;
     padding: 20px;
     border-radius: 10px;
 }
+
+/* Mengatur tampilan tombol dalam kalkulator */
 .calculator form input{
     border: 0;
     outline: 0;
@@ -33,11 +38,14 @@
     margin: 10px;
 }
 
+/* Mengatur tampilan input display */
 form .display{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
 }
+
+/* Mengatur tampilan input display dalam kalkulator */
 form .display input{
     background-color: #868CAC;
     height: 80px;
@@ -48,12 +56,13 @@ form .display input{
     flex: 1;
     font-size: 45px;
 }
+
+/* Mengatur tampilan tombol equal */
 form input.equal{
     width: 145px;
 }
 
-
-
+/* Mengatur tampilan tombol operator dengan warna khusus */
 form input.operator{
     color: #AC87C5;
 }
